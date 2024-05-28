@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace mediatek
 {
-    public partial class Form1 : Form
+    public partial class Frmconnexion : Form
     {
-        public Form1()
+        public Frmconnexion()
         {
             InitializeComponent();
         }
 
         private void btnok_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
+            Frmpersonnel frmpersonnel = new Frmpersonnel();
+            frmpersonnel.ShowDialog();
         }
         
     }

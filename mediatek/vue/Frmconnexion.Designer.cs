@@ -1,7 +1,7 @@
 ﻿
 namespace mediatek
 {
-    partial class Form1
+    partial class Frmconnexion
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

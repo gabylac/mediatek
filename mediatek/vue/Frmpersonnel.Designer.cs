@@ -1,7 +1,7 @@
 ﻿
 namespace mediatek
 {
-    partial class Form2
+    partial class Frmpersonnel
     {
         /// <summary>
         /// Required designer variable.
@@ -47,21 +47,21 @@ namespace mediatek
             this.lblTel = new System.Windows.Forms.Label();
             this.lblPrenom = new System.Windows.Forms.Label();
             this.lblNom = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grpAbsence = new System.Windows.Forms.GroupBox();
             this.btnAnnul = new System.Windows.Forms.Button();
             this.btnEnregistrer = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblModif = new System.Windows.Forms.Label();
             this.lblDFin = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
             this.lblDDebut = new System.Windows.Forms.Label();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnModif = new System.Windows.Forms.Button();
             this.btnAjout = new System.Windows.Forms.Button();
             this.lstAbsence = new System.Windows.Forms.ListBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.grpPersonnel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grpAbsence.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1
@@ -70,7 +70,7 @@ namespace mediatek
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(376, 644);
+            this.listBox1.Size = new System.Drawing.Size(376, 596);
             this.listBox1.TabIndex = 0;
             // 
             // btnAjouter
@@ -230,30 +230,30 @@ namespace mediatek
             this.lblNom.TabIndex = 0;
             this.lblNom.Text = "Nom";
             // 
-            // groupBox2
+            // grpAbsence
             // 
-            this.groupBox2.Controls.Add(this.btnAnnul);
-            this.groupBox2.Controls.Add(this.btnEnregistrer);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.lblModif);
-            this.groupBox2.Controls.Add(this.lblDFin);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.lblDDebut);
-            this.groupBox2.Controls.Add(this.btnSupprimer);
-            this.groupBox2.Controls.Add(this.btnModif);
-            this.groupBox2.Controls.Add(this.btnAjout);
-            this.groupBox2.Controls.Add(this.lstAbsence);
-            this.groupBox2.Location = new System.Drawing.Point(530, 254);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(468, 402);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Absence";
+            this.grpAbsence.Controls.Add(this.comboBox2);
+            this.grpAbsence.Controls.Add(this.btnAnnul);
+            this.grpAbsence.Controls.Add(this.btnEnregistrer);
+            this.grpAbsence.Controls.Add(this.lblModif);
+            this.grpAbsence.Controls.Add(this.lblDFin);
+            this.grpAbsence.Controls.Add(this.dtpFin);
+            this.grpAbsence.Controls.Add(this.dtpDebut);
+            this.grpAbsence.Controls.Add(this.lblDDebut);
+            this.grpAbsence.Controls.Add(this.btnSupprimer);
+            this.grpAbsence.Controls.Add(this.btnModif);
+            this.grpAbsence.Controls.Add(this.btnAjout);
+            this.grpAbsence.Controls.Add(this.lstAbsence);
+            this.grpAbsence.Location = new System.Drawing.Point(530, 254);
+            this.grpAbsence.Name = "grpAbsence";
+            this.grpAbsence.Size = new System.Drawing.Size(468, 355);
+            this.grpAbsence.TabIndex = 6;
+            this.grpAbsence.TabStop = false;
+            this.grpAbsence.Text = "Absence";
             // 
             // btnAnnul
             // 
-            this.btnAnnul.Location = new System.Drawing.Point(250, 358);
+            this.btnAnnul.Location = new System.Drawing.Point(244, 299);
             this.btnAnnul.Name = "btnAnnul";
             this.btnAnnul.Size = new System.Drawing.Size(93, 38);
             this.btnAnnul.TabIndex = 11;
@@ -262,24 +262,17 @@ namespace mediatek
             // 
             // btnEnregistrer
             // 
-            this.btnEnregistrer.Location = new System.Drawing.Point(142, 358);
+            this.btnEnregistrer.Location = new System.Drawing.Point(127, 299);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.Size = new System.Drawing.Size(93, 38);
             this.btnEnregistrer.TabIndex = 10;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(56, 262);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(405, 22);
-            this.textBox5.TabIndex = 9;
-            // 
             // lblModif
             // 
             this.lblModif.AutoSize = true;
-            this.lblModif.Location = new System.Drawing.Point(6, 262);
+            this.lblModif.Location = new System.Drawing.Point(23, 262);
             this.lblModif.Name = "lblModif";
             this.lblModif.Size = new System.Drawing.Size(38, 17);
             this.lblModif.TabIndex = 8;
@@ -288,30 +281,30 @@ namespace mediatek
             // lblDFin
             // 
             this.lblDFin.AutoSize = true;
-            this.lblDFin.Location = new System.Drawing.Point(226, 215);
+            this.lblDFin.Location = new System.Drawing.Point(225, 220);
             this.lblDFin.Name = "lblDFin";
             this.lblDFin.Size = new System.Drawing.Size(61, 17);
             this.lblDFin.TabIndex = 7;
             this.lblDFin.Text = "Date Fin";
             // 
-            // dateTimePicker2
+            // dtpFin
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(293, 210);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(169, 22);
-            this.dateTimePicker2.TabIndex = 6;
+            this.dtpFin.Location = new System.Drawing.Point(292, 215);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(169, 22);
+            this.dtpFin.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtpDebut
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(87, 210);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(133, 22);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpDebut.Location = new System.Drawing.Point(87, 215);
+            this.dtpDebut.Name = "dtpDebut";
+            this.dtpDebut.Size = new System.Drawing.Size(133, 22);
+            this.dtpDebut.TabIndex = 5;
             // 
             // lblDDebut
             // 
             this.lblDDebut.AutoSize = true;
-            this.lblDDebut.Location = new System.Drawing.Point(3, 215);
+            this.lblDDebut.Location = new System.Drawing.Point(3, 220);
             this.lblDDebut.Name = "lblDDebut";
             this.lblDDebut.Size = new System.Drawing.Size(78, 17);
             this.lblDDebut.TabIndex = 4;
@@ -353,24 +346,32 @@ namespace mediatek
             this.lstAbsence.Size = new System.Drawing.Size(456, 132);
             this.lstAbsence.TabIndex = 0;
             // 
-            // Form2
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(87, 255);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(289, 24);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // Frmpersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 668);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(1010, 622);
+            this.Controls.Add(this.grpAbsence);
             this.Controls.Add(this.grpPersonnel);
             this.Controls.Add(this.btnAfficher);
             this.Controls.Add(this.btnSupp);
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.listBox1);
-            this.Name = "Form2";
+            this.Name = "Frmpersonnel";
             this.Text = "Personnel";
             this.grpPersonnel.ResumeLayout(false);
             this.grpPersonnel.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpAbsence.ResumeLayout(false);
+            this.grpAbsence.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -395,18 +396,18 @@ namespace mediatek
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.Label lblPrenom;
         private System.Windows.Forms.Label lblNom;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox grpAbsence;
+        private System.Windows.Forms.DateTimePicker dtpDebut;
         private System.Windows.Forms.Label lblDDebut;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnModif;
         private System.Windows.Forms.Button btnAjout;
         private System.Windows.Forms.ListBox lstAbsence;
         private System.Windows.Forms.Label lblDFin;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFin;
         private System.Windows.Forms.Button btnAnnul;
         private System.Windows.Forms.Button btnEnregistrer;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label lblModif;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

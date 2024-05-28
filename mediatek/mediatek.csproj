@@ -57,30 +57,36 @@
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bddmanager\BddManager.cs" />
+    <Compile Include="dal\Access.cs" />
     <Compile Include="mediatekDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>mediatekDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="vue\Form1.cs">
+    <Compile Include="modele\Absence.cs" />
+    <Compile Include="modele\Motif.cs" />
+    <Compile Include="modele\Personnels.cs" />
+    <Compile Include="modele\service.cs" />
+    <Compile Include="vue\Frmconnexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vue\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="vue\Frmconnexion.Designer.cs">
+      <DependentUpon>Frmconnexion.cs</DependentUpon>
     </Compile>
-    <Compile Include="vue\Form2.cs">
+    <Compile Include="vue\Frmpersonnel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vue\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="vue\Frmpersonnel.Designer.cs">
+      <DependentUpon>Frmpersonnel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="vue\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="vue\Frmconnexion.resx">
+      <DependentUpon>Frmconnexion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vue\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="vue\Frmpersonnel.resx">
+      <DependentUpon>Frmpersonnel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,7 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controleur\" />
-    <Folder Include="modele\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
