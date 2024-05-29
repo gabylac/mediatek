@@ -39,7 +39,7 @@ namespace mediatek.dal
         /// <summary>
         /// creation d'une seule instance de la classe
         /// </summary>
-        /// <returns></returns>
+        /// <returns>instance unique</returns>
         public static Access GetInstance()
         {
             if (instance == null)
