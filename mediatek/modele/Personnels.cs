@@ -19,21 +19,21 @@ namespace mediatek.modele
         /// <param name="prenom"></param>
         /// <param name="tel"></param>
         /// <param name="mail"></param>
-        /// <param name="idservice"></param>
-        public Personnels(int idpersonnel, string nom, string prenom, string tel, string mail, service idservice)
+        /// <param name="service"></param>
+        public Personnels(int idpersonnel, string nom, string prenom, string tel, string mail, service service)
         {
             this.Idpersonnel = idpersonnel;
             this.Nom = nom;
             this.Prenom = prenom;
             this.Tel = tel;
             this.Mail = mail;
-            this.Idservice = idservice;
+            this.Service = service;
         }
         public int Idpersonnel { get; }
         public string Nom { set; get; }
         public string Prenom { set; get; }
         public string Tel { set; get; }
         public string Mail { set; get; }
-        public service Idservice { set; get; }
+        public service Service { set; get; }
     }
 }

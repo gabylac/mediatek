@@ -60,8 +60,10 @@
   <ItemGroup>
     <Compile Include="bddmanager\BddManager.cs" />
     <Compile Include="controleur\FrmPersonnelControleur.cs" />
+    <Compile Include="dal\AbsenceAccess.cs" />
     <Compile Include="dal\Access.cs" />
     <Compile Include="dal\PersonnelAccess.cs" />
+    <Compile Include="dal\ServiceAccess.cs" />
     <Compile Include="mediatekDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -23,5 +23,13 @@ namespace mediatek.modele
         }
         public int Idservice { get; }
         public string Nom { get; set; }
+        /// <summary>
+        /// definit l'info à afficher (juste le nom)
+        /// </summary>
+        /// <returns>le nom du service</returns>
+        public override string ToString()
+        {
+            return this.Nom;
+        }
     }
 }
